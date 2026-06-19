@@ -1,12 +1,13 @@
-def find_gcd(a, b):
-    while a > 0 and b > 0:
-        if a > b:
-            a = a -b
+def pattern(a, b):
+    while a> 0 and b> 0:
+        if a>b:
+            a =a -b
         else:
-            b = b - a
-    if a == 0:
+            b= b - a
+    if a== 0:
         return b
-    return a
+    else:
+        return a
 a = int(input())
 b=int(input())
-print(find_gcd(a,b))
+print(pattern(a,b))
