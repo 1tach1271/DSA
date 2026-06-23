@@ -1,6 +1,6 @@
 def pattern(arr):
     arr[:]=arr[::-1]
 if __name__=="__main__":
-    arr = [1,2,3,4,5]
+    arr = list(map(int,input("Enter the array").split()))
     pattern(arr)
     print(" ".join(map(str,arr)))
