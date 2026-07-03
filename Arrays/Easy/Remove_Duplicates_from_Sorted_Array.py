@@ -1,14 +1,11 @@
-def setss(arr,n):
-    i=0
-    for j in range(1,n):
-        if arr[j]!=arr[i]:
-            i+=1
+def p(arr,n):
+    i =0
+    s=set()
+    for j in range(n):
+        s.add(arr[i])
+        i+=1
+    print(s)
 
-            arr[i+1]=arr[j]
-            
-    
-    print(arr[:i])
-    return i+1
-arr=list(map(int,input("enter the array ").split()))
+arr = list(map(int,input().split()))
 n = len(arr)
-print(setss(arr,n))
+p(arr,n)

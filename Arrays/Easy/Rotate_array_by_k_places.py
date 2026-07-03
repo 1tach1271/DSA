@@ -3,13 +3,10 @@ def r(arr, n, k,direction):
 
         k = k % n
         temp = arr[:k]
-
         for i in range(k, n):
             arr[i-k] = arr[i]
-
         for i in range(k):
             arr[n-k+i] = temp[i]
-
     else:
         k =k%n
         temp=arr[n-k:]
@@ -18,8 +15,6 @@ def r(arr, n, k,direction):
         for i in range(k):
             arr[i]=temp[i]
     print(arr)
-
-
 arr = list(map(int, input().split()))
 n = len(arr)
 k = int(input())
