@@ -73,9 +73,10 @@ def main():
 if __name__ == "__main__":
     main()
 
-#4 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/check-if-a-number-is-palindrome-or-not/
-# https://takeuforward.org/recursion/print-name-n-times-using-recursion/
-# https://takeuforward.org/arrays/find-the-highest-lowest-frequency-element/
-# https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/
+# 15 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/data-structure/check-if-a-number-is-prime-or-not/
+# https://takeuforward.org/data-structure/reverse-a-given-array/
+# https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
+# https://takeuforward.org/arrays/recursive-insertion-sort-algorithm/
+# https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
 # https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
