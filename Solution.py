@@ -1,98 +1,78 @@
-# def pattern(n):
-#     for i in range(n-1,-1,-1):
-#         for j in range(i+1):
-#             print(chr(65+j), end="")
+# def f(n):
+#     for i in range(n,0,-1):
+#         for j in range(i):
+#             print("*",end="")
 #         print()
 
-
+# n=int(input())
+# f(n)
+# import math
+# def f(n):
+#     if n==0:
+#         return 1
+#     n=abs(n)
+#     count=int(math.log10(n)+1)
+#     return count
 # n = int(input())
-# pattern(n)
+# print(f(n))
 
-# def p(num):
-#     a = 0
-#     b= int(num**(0.5)) 
-#     for i in range(1,b+1):
-#         if num%i==0:
-#             a+=1
-#             if num//i != i:
-#                 a+=1
-#     if a==2:
-#         print("Prime")
-#     else:
-#         print("Not prime")
+# def f(n):
+#     if n ==0:
+#         return 1
+#     return n*f(n-1)
 
-# num = int(input())
-# p(num)
-
-# def p(arr):
-#     arr=arr[::-1]
-#     print(arr)
-# arr = list(map(int,input().split()))
-# p(arr)
+# n=int(input())
+# print(f(n))
 
 # from collections import defaultdict
-# def p(arr,n):
-#     hash = defaultdict(int)
+# def f(arr,n):
+#     a=defaultdict(int)
 #     for i in range(n):
-#         hash[arr[i]]+=1
-#     for a, b in hash.items():
+#         a[arr[i]]+=1
+#     for a,b in a.items():
 #         print(a,b)
 # arr=list(map(int,input().split()))
-# n = len(arr)
-# p(arr,n)
+# n=len(arr)
+# f(arr,n)
 
-# def iss(arr,i,n):
-#     if i==n:
-#         return 
-#     j =i
-#     while j>0 and arr[j-1]>arr[j]:
-#         arr[j-1],arr[j]=arr[j],arr[j-1]
-#         j-=1
-#     iss(arr,i+1,n)
-# arr = list(map(int,input().split()))
-# n = len(arr)
-# iss(arr,1,n)
-# print(arr)
-
-# def m(arr,n):
-#     for i in range(1,n+1):
-#         if i not in arr:
-#             return i
+# def f(arr,n):
+#     for i in range(n-1,-1,-1):
+#         for j in range(i):
+#             if arr[j+1]<arr[j]:
+#                 arr[j+1],arr[j]=arr[j],arr[j+1]
+#     print(arr)
 
 # arr=list(map(int,input().split()))
-# n = len(arr)+1
-# print(m(arr,n))
-# def m(arr,n):
-#     a = (n*(n+1))//2
-#     b = sum(arr)
-#     print(a-b)
+# n=len(arr)
+# f(arr,n)
+
+# def f(arr1,n):
+#     a=0
+#     for j in range(1,n):
+#         if arr1[j]!=arr1[a]:
+#             a+=1
+#             arr1[a]=arr1[j]
+#     print(arr1)
+# arr1=list(map(int,input().split()))
+# n=len(arr1)
+# f(arr1,n)
+
+# def f(arr,n):
+#     low=0
+#     mid=0
+#     high=n-1
+#     while mid<=high:
+#         if arr[mid]==0:
+#             arr[low],arr[mid]=arr[mid],arr[low]
+#             low+=1
+#             mid+=1
+#         elif arr[mid]==1:
+#             mid+=1
+#         else:
+#             arr[mid],arr[high]=arr[high],arr[mid]
+#             high-=1
+#     print(arr)
 # arr=list(map(int,input().split()))
-# n = len(arr)+1
-# m(arr,n)
+# n=len(arr)
+# f(arr,n)
 
-# def k(arr,n):
-#     m =float('-inf')
-#     s=0
-#     for i in range(n):
-#         s+=arr[i]
-#         m = max(m,s)
-
-#         if s<0:
-#             s=0
-#     print(m)
-# arr = list(map(int,input().split()))
-# n = len(arr)
-# k(arr,n)
-
-# def k(arr,n):
-#     m=float('-inf')
-#     for i in range(n):
-#         s=0
-#         for j in range(i,n):
-#             s+=arr[j]
-#             m=max(s,m)
-#     print(m)
-
-# arr = list(map(int,input().split()))
-# n = len(arr)
-# k(arr,n)

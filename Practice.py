@@ -72,11 +72,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# 15 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/check-if-a-number-is-prime-or-not/
-# https://takeuforward.org/data-structure/reverse-a-given-array/
+# 5 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/data-structure/count-digits-in-a-number/
+# https://takeuforward.org/data-structure/factorial-of-a-number-iterative-and-recursive/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/arrays/recursive-insertion-sort-algorithm/
-# https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
-# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
+# https://takeuforward.org/data-structure/bubble-sort-algorithm/
+# https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/
+# https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/
