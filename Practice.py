@@ -54,7 +54,10 @@ mediumArrays =[
 	"https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/",
 	"https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/",
 	"https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/",
-	"https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/"]
+	"https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/",
+    "https://takeuforward.org/data-structure/stock-buy-and-sell",
+    "https://takeuforward.org/arrays/rearrange-array-elements-by-sign",
+    "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation"]
 
 modules = [
 	basicMaths,
@@ -72,10 +75,11 @@ def main():
 
 if __name__ == "__main__":
     main()
-# 5 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+    
+# 16 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
 # https://takeuforward.org/data-structure/count-digits-in-a-number/
-# https://takeuforward.org/data-structure/factorial-of-a-number-iterative-and-recursive/
-# https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/data-structure/bubble-sort-algorithm/
-# https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/
-# https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/
+# https://takeuforward.org/data-structure/reverse-a-given-array/
+# https://takeuforward.org/arrays/find-the-highest-lowest-frequency-element/
+# https://takeuforward.org/sorting/selection-sort-algorithm/
+# https://takeuforward.org/arrays/longest-subarray-with-sum-k-postives-and-negatives/
+# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
