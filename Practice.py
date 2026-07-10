@@ -57,7 +57,9 @@ mediumArrays =[
 	"https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/",
     "https://takeuforward.org/data-structure/stock-buy-and-sell",
     "https://takeuforward.org/arrays/rearrange-array-elements-by-sign",
-    "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation"]
+    "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation",
+        "https://takeuforward.org/data-structure/leaders-in-an-array",
+        "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array"]
 
 modules = [
 	basicMaths,
