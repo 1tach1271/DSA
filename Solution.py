@@ -1,104 +1,95 @@
 # def f(n):
-#     for i in range(n):
-#         for j in range(i+1):
-#             print(chr(65+i),end=" ")
+#     for i in range(n,0,-1):
+#         print("*"*i,end="")
 #         print()
-# n = int(input())
-# f(n)
-
-# def f(n):
-#     a=0
-#     b=0
-#     while n>0:
-#         b=n%10
-#         a+=1
-#         n=n//10
-#     print(a)
 # n=int(input())
 # f(n)
 
-# def f(arr):
-#     arr[:]=arr[::-1]
-#     print(arr)
+# def a(n):
+#     l=0
+#     m=0
+#     while n>0:
+#         l=n%10
+#         m=m*10 + l
+#         n=n//10
+#     print(m)
+# n=int(input())
+# a(n)
 
-# arr=list(map(int,input().split()))
-# f(arr)
+# def f(n,c):
+#     if c>n:
+#         return 
+#     print(c,end=" ")
+#     f(n,c+1)
+# n=int(input())
+# f(n,1)
 
 # from collections import defaultdict
 # def f(arr,n):
-#     h = defaultdict(int)
+#     h=defaultdict(int)
 #     for i in range(n):
 #         h[arr[i]]+=1
-#     maxc=0
-#     minc=n 
-#     maxe=0
-#     mine=0
 #     for a,b in h.items():
-#         if b>maxc:
-#             maxc=b
-#             maxe=a 
-#         if b<minc:
-#             minc=b
-#             mine=a
-#     print(maxe,mine)
-
+#         print(a,b)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
 # def f(arr,n):
-#     for i in range(0,n-1):
-#         a=i
-#         for j in range(i+1,n):
-#             if arr[a]>arr[j]:
-#                 a=j
-#         arr[i],arr[a]=arr[a],arr[i]
-#     print(arr)
+#     if n==1:
+#         return
+#     for j in range(n-1):
+#         if arr[j+1]<arr[j]:
+#             arr[j],arr[j+1]=arr[j+1],arr[j]
+#     f(arr,n-1)
+# arr=list(map(int,input().split()))
+# n=len(arr)
+# f(arr,n)
+# print(arr)
+
+# def f(arr,n):
+#     x=0
+#     for i in range(n):
+#         x=x^arr[i]
+#     print(x)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
-# def f(arr,n,k):
-#     a=0
-#     left=0
-#     right=0
-#     s=arr[0]
-#     while right<n:
-#         while left<=right and  s>k:
-#             s-=arr[left]
-#             left+=1
-#         if s==k:
-#             a=max(a,right-left+1)
-#         right+=1
-#         if right<n:
-#             s+=arr[right]
+# def f(arr,n):
+#     a=[]
+#     b=[]
+#     for i in range(n):
+#         if arr[i]>0:
+#             a.append(arr[i])
+#         else:
+#             b.append(arr[i])
+#     j=0
+#     s=0
+#     for i in range(n):
+#         if i%2==0:
+#             arr[i]=a[j]
+#             j+=1
+#         else:
+#             arr[i]=b[s]
+#             s+=1
+# arr=list(map(int,input().split()))
+# n=len(arr)
+# f(arr,n)
+# print(arr)
+
+# def f(arr,n):
+#     a=[0]*n
+#     b=0
+#     c=1
+#     for i in range(n):
+#         if arr[i]<0:
+#             a[c]=arr[i]
+#             c+=2
+#         else:
+#             a[b]=arr[i]
+#             b+=2
 #     print(a)
 # arr=list(map(int,input().split()))
 # n=len(arr)
-# k=int(input())
-# f(arr,n,k)
-
-# def f(arr,n):
-#     m=float('-inf')
-#     s=0
-#     start=0
-#     anss=-1
-#     anse=-1
-#     for i in range(n):
-#         if s==0:
-#             start=i
-#         s+=arr[i]
-#         if s>m:
-#             m=s
-#             anss=start
-#             anse=i
-#         if s<0:
-#             s=0
-#     print(m)
-#     for i in range(anss,anse+1):
-#         print(arr[i],end=" ")
-
-# arr=list(map(int,input().split()))
-# n=len(arr)
 # f(arr,n)
-

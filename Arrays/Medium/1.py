@@ -1,19 +1,19 @@
 def f(arr,n):
-    if n==0:
-        return 0
-    l=1
-    a=set()
-    for i in range(n):
-        a.add(arr[i])
-    for i in a:
-        if i-1 not in a:
-            c=1
-            b=i
-            while b+1 in a:
-                b+=1
-                c+=1
-            l=max(l,c)
-    print(l)
+    idx = -1
+    for i in range(n-2,-1,-1):
+        if arr[i]<arr[i+1]:
+            idx=i
+            break
+    if idx==-1:
+        arr[:]=reversed(arr[:])
+        return arr
+    for i in range(n-1,idx,-1):
+        if arr[i]>arr[idx]:    
+            arr[i],arr[idx]=arr[idx],arr[i]
+            break
+    arr[idx+1:]=reversed(arr[idx+1:])
+    return arr
+
 arr=list(map(int,input().split()))
 n=len(arr)
-f(arr,n)
+print(f(arr,n))

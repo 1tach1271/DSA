@@ -76,10 +76,10 @@ def main():
 if __name__ == "__main__":
     main()
     
-# 16 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/count-digits-in-a-number/
-# https://takeuforward.org/data-structure/reverse-a-given-array/
-# https://takeuforward.org/arrays/find-the-highest-lowest-frequency-element/
-# https://takeuforward.org/sorting/selection-sort-algorithm/
-# https://takeuforward.org/arrays/longest-subarray-with-sum-k-postives-and-negatives/
-# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
+# 5 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/maths/reverse-digits-of-a-number
+# https://takeuforward.org/recursion/print-1-to-n-using-recursion/
+# https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
+# https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/
+# https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/
+# https://takeuforward.org/arrays/rearrange-array-elements-by-sign
