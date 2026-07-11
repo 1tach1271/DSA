@@ -59,7 +59,9 @@ mediumArrays =[
     "https://takeuforward.org/arrays/rearrange-array-elements-by-sign",
     "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation",
         "https://takeuforward.org/data-structure/leaders-in-an-array",
-        "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array"]
+        "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array",
+        "https://takeuforward.org/arrays/count-subarray-sum-equals-k",
+        "https://takeuforward.org/data-structure/spiral-traversal-of-matrix"]
 
 modules = [
 	basicMaths,

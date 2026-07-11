@@ -16,6 +16,21 @@ f(arr,n,k)
 
 # 2.
 def f(arr,n,k):
+    c=0
+    for i in range(n):
+        s=0
+        for j in range(i,n):
+            s+=arr[j]
+            if s==k:
+                c+=1
+    print(c)
+arr=list(map(int,input().split()))
+k=int(input())
+n=len(arr)
+f(arr,n,k)
+
+#3. for positive array
+def f(arr,n,k):
     s=arr[0]
     c=0
     left=0
@@ -35,7 +50,7 @@ k=int(input())
 n=len(arr)
 f(arr,n,k)
 
-# 3.
+# 4.
 def f(arr,n,k):
     s=0
     c=0
@@ -49,6 +64,25 @@ def f(arr,n,k):
             c+=1
     print(c)
     
+arr=list(map(int,input().split()))
+k=int(input())
+n=len(arr)
+f(arr,n,k)
+
+# 5.
+from collections import defaultdict
+def f(arr,n,k):
+    h=defaultdict(int)
+    ps=0
+    c=0
+    h[0]=1
+    for i in range(n):
+        ps+=arr[i]
+        a=ps-k
+        if a in h:
+            c+=h[a]
+        h[ps]=h.get(ps,0) +1
+    print(c)
 arr=list(map(int,input().split()))
 k=int(input())
 n=len(arr)
