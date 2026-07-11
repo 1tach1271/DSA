@@ -77,11 +77,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-# 5 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/maths/reverse-digits-of-a-number
-# https://takeuforward.org/recursion/print-1-to-n-using-recursion/
+# 13 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/maths/check-if-a-number-is-armstrong-number-or-not/
+# https://takeuforward.org/arrays/print-fibonacci-series-up-to-nth-term/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/
-# https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/
+# https://takeuforward.org/data-structure/quick-sort-algorithm/
+# https://takeuforward.org/data-structure/check-if-an-array-is-sorted/
 # https://takeuforward.org/arrays/rearrange-array-elements-by-sign

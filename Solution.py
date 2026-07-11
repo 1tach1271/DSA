@@ -1,28 +1,38 @@
 # def f(n):
-#     for i in range(n,0,-1):
-#         print("*"*i,end="")
+#     a=1
+#     for i in range(n):
+#         for j in range(i+1):
+#             print(a,end=" ")
+#             a+=1
 #         print()
+# n = int(input())
+# f(n)
+
+# def f(n):
+#     a=n
+#     c=len(str(n))
+#     l=0
+#     m=0
+#     while a>0:
+#         l= a%10
+#         m +=l**c
+#         a=a//10
+#     if m==n:
+#         print("Yes")
+#     else:
+#         print("No")
 # n=int(input())
 # f(n)
 
-# def a(n):
-#     l=0
-#     m=0
-#     while n>0:
-#         l=n%10
-#         m=m*10 + l
-#         n=n//10
-#     print(m)
+# def f(n):
+#     if n<=1:
+#         return n
+#     l=f(n-1)
+#     sl=f(n-2)
+#     return l+sl
 # n=int(input())
-# a(n)
-
-# def f(n,c):
-#     if c>n:
-#         return 
-#     print(c,end=" ")
-#     f(n,c+1)
-# n=int(input())
-# f(n,1)
+# for i in range(n+1):
+#     print(f(i),end=" ")
 
 # from collections import defaultdict
 # def f(arr,n):
@@ -35,48 +45,53 @@
 # n=len(arr)
 # f(arr,n)
 
-# def f(arr,n):
-#     if n==1:
-#         return
-#     for j in range(n-1):
-#         if arr[j+1]<arr[j]:
-#             arr[j],arr[j+1]=arr[j+1],arr[j]
-#     f(arr,n-1)
-# arr=list(map(int,input().split()))
+# def f(arr,low,high):
+#     if low<high:
+#         p = pa(arr,low,high)
+#         f(arr,low,p-1)
+#         f(arr,p+1,high)
+# def pa(arr,low,high):
+#     pivot = arr[low]
+#     i=low
+#     j=high
+#     while i<j:
+#         while i<=high and arr[i]<=pivot:
+#             i+=1
+#         while j>=low and arr[j]> pivot:
+#             j-=1
+#         if i<j:
+#             arr[i],arr[j]=arr[j],arr[i]
+#     arr[low],arr[j]=arr[j],arr[low]
+#     return j
+# arr = list(map(int,input().split()))
 # n=len(arr)
-# f(arr,n)
+# f(arr,0,n-1)
 # print(arr)
 
 # def f(arr,n):
-#     x=0
-#     for i in range(n):
-#         x=x^arr[i]
-#     print(x)
-# arr=list(map(int,input().split()))
+#     for i in range(n-2):
+#         if arr[i]>arr[i+1]:
+#             return False
+#     return True
+# arr = list(map(int,input().split()))
 # n=len(arr)
-# f(arr,n)
+# print(f(arr,n))
 
 # def f(arr,n):
 #     a=[]
 #     b=[]
 #     for i in range(n):
-#         if arr[i]>0:
-#             a.append(arr[i])
-#         else:
+#         if arr[i]<0:
 #             b.append(arr[i])
-#     j=0
-#     s=0
-#     for i in range(n):
-#         if i%2==0:
-#             arr[i]=a[j]
-#             j+=1
 #         else:
-#             arr[i]=b[s]
-#             s+=1
+#             a.append(arr[i])
+#     for i in range(n//2):
+#         arr[i*2]=a[i]
+#         arr[2*i +1] = b[i]
+#     print(arr)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
-# print(arr)
 
 # def f(arr,n):
 #     a=[0]*n
@@ -89,7 +104,7 @@
 #         else:
 #             a[b]=arr[i]
 #             b+=2
-#     print(a)
+#     return a
 # arr=list(map(int,input().split()))
 # n=len(arr)
-# f(arr,n)
+# print(f(arr,n))
