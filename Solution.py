@@ -1,39 +1,31 @@
+# 1.
 # def f(n):
-#     a=1
 #     for i in range(n):
-#         for j in range(i+1):
-#             print(a,end=" ")
-#             a+=1
+#         print("*"*n,end="")
 #         print()
-# n = int(input())
-# f(n)
-
-# def f(n):
-#     a=n
-#     c=len(str(n))
-#     l=0
-#     m=0
-#     while a>0:
-#         l= a%10
-#         m +=l**c
-#         a=a//10
-#     if m==n:
-#         print("Yes")
-#     else:
-#         print("No")
 # n=int(input())
 # f(n)
 
+# 2.
 # def f(n):
-#     if n<=1:
-#         return n
-#     l=f(n-1)
-#     sl=f(n-2)
-#     return l+sl
+#     for i in range(1,n+1):
+#         if n%i==0:
+#             print(i,end=" ")
 # n=int(input())
-# for i in range(n+1):
-#     print(f(i),end=" ")
+# f(n)
 
+# 3.
+# def f(a,n,i):
+#     if i>=n//2:
+#         return True
+#     if a[i]!=a[n-i-1]:
+#         return False
+#     return f(a,n,i+1)
+# a=input()
+# n=len(a)
+# print(f(a,n,0))
+
+# 4.
 # from collections import defaultdict
 # def f(arr,n):
 #     h=defaultdict(int)
@@ -41,70 +33,83 @@
 #         h[arr[i]]+=1
 #     for a,b in h.items():
 #         print(a,b)
-# arr=list(map(int,input().split()))
+# arr = list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
-# def f(arr,low,high):
+# 5.
+# def q(arr,low,high):
 #     if low<high:
 #         p = pa(arr,low,high)
-#         f(arr,low,p-1)
-#         f(arr,p+1,high)
+#         q(arr,low,p-1)
+#         q(arr,p+1,high)
 # def pa(arr,low,high):
 #     pivot = arr[low]
-#     i=low
-#     j=high
-#     while i<j:
-#         while i<=high and arr[i]<=pivot:
-#             i+=1
-#         while j>=low and arr[j]> pivot:
-#             j-=1
-#         if i<j:
-#             arr[i],arr[j]=arr[j],arr[i]
-#     arr[low],arr[j]=arr[j],arr[low]
-#     return j
-# arr = list(map(int,input().split()))
+#     left = low 
+#     right = high
+#     while left<right:
+#         while left<=high and arr[left]<=pivot:
+#             left+=1
+#         while right>= low and arr[right]>pivot:
+#             right-=1
+#         if left<right:
+#             arr[left],arr[right]=arr[right],arr[left]
+#     arr[right],arr[low]=arr[low],arr[right]
+#     return right
+# arr =list(map(int,input().split()))
 # n=len(arr)
-# f(arr,0,n-1)
+# q(arr,0,n-1)
 # print(arr)
 
-# def f(arr,n):
-#     for i in range(n-2):
-#         if arr[i]>arr[i+1]:
-#             return False
-#     return True
-# arr = list(map(int,input().split()))
-# n=len(arr)
-# print(f(arr,n))
+# 6.
 
 # def f(arr,n):
-#     a=[]
-#     b=[]
+#     a = float('-inf')
+#     b= float('inf')
 #     for i in range(n):
-#         if arr[i]<0:
-#             b.append(arr[i])
-#         else:
-#             a.append(arr[i])
-#     for i in range(n//2):
-#         arr[i*2]=a[i]
-#         arr[2*i +1] = b[i]
-#     print(arr)
-# arr=list(map(int,input().split()))
+#         if arr[i]>a:
+#             a=arr[i]
+#         if arr[i]<b:
+#             b=arr[i]
+#     c = float('-inf')
+#     d= float('inf')
+#     e=c
+#     f=d
+#     for i in range(n):
+#         if arr[i]>c and arr[i]!=a:
+#             c=arr[i]
+#         if arr[i]<d and arr[i]!=b:
+#             d=arr[i]
+#     if c == e:
+#         c= -1
+#     if d ==f:
+#         d= -1
+#     print("The second largest element is: ",c)
+#     print("The second smallest element is: ",d)
+# arr= list(map(int,input().split()))
+# n = len(arr)
+# f(arr,n)
+
+# 6.
+# def f(arr,n):
+#     s= 0 
+#     m= float('-inf')
+#     a=0
+#     b=-1
+#     c=-1
+#     for i in range(n):
+#         if s==0:
+#             a=i
+#         s+=arr[i]
+#         if s>m:
+#             m=s
+#             b=a
+#             c=i
+#         if s<0:
+#             s=0
+#     for i in range(b,c+1):
+#         print(arr[i],end=" ")
+# arr = list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
-# def f(arr,n):
-#     a=[0]*n
-#     b=0
-#     c=1
-#     for i in range(n):
-#         if arr[i]<0:
-#             a[c]=arr[i]
-#             c+=2
-#         else:
-#             a[b]=arr[i]
-#             b+=2
-#     return a
-# arr=list(map(int,input().split()))
-# n=len(arr)
-# print(f(arr,n))

@@ -58,10 +58,10 @@ mediumArrays =[
     "https://takeuforward.org/data-structure/stock-buy-and-sell",
     "https://takeuforward.org/arrays/rearrange-array-elements-by-sign",
     "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation",
-        "https://takeuforward.org/data-structure/leaders-in-an-array",
-        "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array",
-        "https://takeuforward.org/arrays/count-subarray-sum-equals-k",
-        "https://takeuforward.org/data-structure/spiral-traversal-of-matrix"]
+    "https://takeuforward.org/data-structure/leaders-in-an-array",
+    "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array",
+    "https://takeuforward.org/arrays/count-subarray-sum-equals-k",
+    "https://takeuforward.org/data-structure/spiral-traversal-of-matrix"]
 
 modules = [
 	basicMaths,
@@ -79,10 +79,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-# 13 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/maths/check-if-a-number-is-armstrong-number-or-not/
-# https://takeuforward.org/arrays/print-fibonacci-series-up-to-nth-term/
+# 1 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/data-structure/print-all-divisors-of-a-given-number/
+# https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
 # https://takeuforward.org/data-structure/quick-sort-algorithm/
-# https://takeuforward.org/data-structure/check-if-an-array-is-sorted/
-# https://takeuforward.org/arrays/rearrange-array-elements-by-sign
+# https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/
+# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
