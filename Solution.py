@@ -1,29 +1,38 @@
 # 1.
 # def f(n):
 #     for i in range(n):
-#         print("*"*n,end="")
+#         if i%2==0:
+#             val=1
+#         else:
+#             val=0
+#         for j in range(i+1):
+#             print(val,end=" ")
+#             val=1-val
 #         print()
 # n=int(input())
 # f(n)
 
 # 2.
-# def f(n):
-#     for i in range(1,n+1):
-#         if n%i==0:
-#             print(i,end=" ")
-# n=int(input())
-# f(n)
+# def f(a,b):
+#     while a>0 and b>0:
+#         if a>b:
+#             a-=b
+#         else:
+#             b-=a
+#     if a==0:
+#         print(b)
+#     else:
+#         print(a)
+# a=int(input())
+# b=int(input())
+# f(a,b)
 
 # 3.
-# def f(a,n,i):
-#     if i>=n//2:
-#         return True
-#     if a[i]!=a[n-i-1]:
-#         return False
-#     return f(a,n,i+1)
-# a=input()
-# n=len(a)
-# print(f(a,n,0))
+# def f(arr):
+#     arr[:]=arr[::-1]
+#     print(arr)
+# arr = list(map(int,input().split()))
+# f(arr)
 
 # 4.
 # from collections import defaultdict
@@ -33,83 +42,63 @@
 #         h[arr[i]]+=1
 #     for a,b in h.items():
 #         print(a,b)
-# arr = list(map(int,input().split()))
+# arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
 # 5.
-# def q(arr,low,high):
-#     if low<high:
-#         p = pa(arr,low,high)
-#         q(arr,low,p-1)
-#         q(arr,p+1,high)
-# def pa(arr,low,high):
-#     pivot = arr[low]
-#     left = low 
-#     right = high
-#     while left<right:
-#         while left<=high and arr[left]<=pivot:
-#             left+=1
-#         while right>= low and arr[right]>pivot:
-#             right-=1
-#         if left<right:
-#             arr[left],arr[right]=arr[right],arr[left]
-#     arr[right],arr[low]=arr[low],arr[right]
-#     return right
-# arr =list(map(int,input().split()))
+# def b(arr,n):
+#     if n==1:
+#         return
+#     for j in range(n-1):
+#         if arr[j]>arr[j+1]:
+#             arr[j],arr[j+1]=arr[j+1],arr[j]
+#     b(arr,n-1)
+# arr=list(map(int,input().split()))
 # n=len(arr)
-# q(arr,0,n-1)
+# b(arr,n)
 # print(arr)
 
 # 6.
-
-# def f(arr,n):
-#     a = float('-inf')
-#     b= float('inf')
-#     for i in range(n):
-#         if arr[i]>a:
+# def pattern(arr,n):
+#     if n<2:
+#         return -1
+#     a = arr[0]
+#     b = float('inf')
+#     a1 = arr[0]
+#     b1 = float('inf')
+#     for i in range(0,n):
+#         if a < arr[i]:
 #             a=arr[i]
-#         if arr[i]<b:
+#         if b > arr[i]:
 #             b=arr[i]
-#     c = float('-inf')
-#     d= float('inf')
-#     e=c
-#     f=d
-#     for i in range(n):
-#         if arr[i]>c and arr[i]!=a:
-#             c=arr[i]
-#         if arr[i]<d and arr[i]!=b:
-#             d=arr[i]
-#     if c == e:
-#         c= -1
-#     if d ==f:
-#         d= -1
-#     print("The second largest element is: ",c)
-#     print("The second smallest element is: ",d)
-# arr= list(map(int,input().split()))
-# n = len(arr)
-# f(arr,n)
+#     for i in range(0,n):
+#         if a1< arr[i] and arr[i]!=a:
+#             a1 = arr[i]
+#         if b1 > arr[i] and arr[i]!=b:
+#             b1 = arr[i]
+#     print(a1)
+#     print(b1)
 
-# 6.
+# arr = list(map(int, input().split()))
+# pattern(arr, len(arr))        
+
+# 7.
 # def f(arr,n):
-#     s= 0 
-#     m= float('-inf')
-#     a=0
-#     b=-1
-#     c=-1
-#     for i in range(n):
-#         if s==0:
-#             a=i
-#         s+=arr[i]
-#         if s>m:
-#             m=s
-#             b=a
-#             c=i
-#         if s<0:
-#             s=0
-#     for i in range(b,c+1):
-#         print(arr[i],end=" ")
-# arr = list(map(int,input().split()))
+#     low=0
+#     mid=0
+#     high=n-1
+#     while mid<=high:
+#         if arr[mid]==0:
+#             arr[mid],arr[low]=arr[low],arr[mid]
+#             low+=1
+#             mid+=1
+#         elif arr[mid]==1:
+#             mid+=1
+#         else:
+#             arr[mid],arr[high]=arr[high],arr[mid]
+#             high-=1
+#     print(arr)
+# arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
-
