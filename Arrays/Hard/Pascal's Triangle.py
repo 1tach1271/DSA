@@ -60,3 +60,19 @@ r=int(input())
 fg(r)
 
 # 5.
+def fg(r):
+    a=1
+    b=[]
+    b.append(a)
+    for c in range(1,r):
+        a=a*(r-c)
+        a= a//c
+        b.append(a)
+    print(b)
+def f(n):
+    a=[]
+    for i in range(1,n+1):
+        a.append(fg(i))
+    return a    
+n=int(input())
+f(n)
