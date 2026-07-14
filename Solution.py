@@ -1,104 +1,105 @@
 # 1.
 # def f(n):
 #     for i in range(n):
-#         if i%2==0:
-#             val=1
-#         else:
-#             val=0
 #         for j in range(i+1):
-#             print(val,end=" ")
-#             val=1-val
+#             print(chr(65+j),end=" ")
 #         print()
 # n=int(input())
 # f(n)
 
 # 2.
-# def f(a,b):
-#     while a>0 and b>0:
-#         if a>b:
-#             a-=b
-#         else:
-#             b-=a
-#     if a==0:
-#         print(b)
+# def p(n):
+#     c=0
+#     for i in range(1,int(n**(0.5))+1):
+#         if n%i==0:
+#             c+=1
+#             if n//i!=i:
+#                 c+=1
+#     if c<=2:
+#         print("Prime")
 #     else:
-#         print(a)
-# a=int(input())
-# b=int(input())
-# f(a,b)
+#         print("Not Prime")
+# n=int(input())
+# p(n)
 
 # 3.
-# def f(arr):
-#     arr[:]=arr[::-1]
-#     print(arr)
-# arr = list(map(int,input().split()))
-# f(arr)
+# def p(i,n):
+#     if i>=len(n)//2:
+#         return True
+#     if n[i]!=n[len(n)-i-1]:
+#         return False
+#     return p(i+1,n)
+# n=input()
+# print(p(0,n))
 
-# 4.
+#4.
 # from collections import defaultdict
 # def f(arr,n):
 #     h=defaultdict(int)
 #     for i in range(n):
 #         h[arr[i]]+=1
+#     mac=0
+#     mic=n
+#     mae=-1
+#     mie=-1
 #     for a,b in h.items():
-#         print(a,b)
+#         if b>mac:
+#             mac=b
+#             mae=a
+#         if b<mic:
+#             mic=b
+#             mie = a 
+#     print(mae)
+#     print(mie)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
 # 5.
-# def b(arr,n):
-#     if n==1:
-#         return
-#     for j in range(n-1):
-#         if arr[j]>arr[j+1]:
-#             arr[j],arr[j+1]=arr[j+1],arr[j]
-#     b(arr,n-1)
-# arr=list(map(int,input().split()))
+# def s(arr,n):
+#     for i in range(0,n-1):
+#         a = i
+#         for j in range(i+1,n):
+#             if arr[a]>arr[j]:
+#                 a=j
+#         arr[i],arr[a]=arr[a],arr[i]
+#     print(arr)
+# arr = list(map(int,input().split()))
 # n=len(arr)
-# b(arr,n)
-# print(arr)
+# s(arr,n)
 
 # 6.
-# def pattern(arr,n):
-#     if n<2:
-#         return -1
-#     a = arr[0]
-#     b = float('inf')
-#     a1 = arr[0]
-#     b1 = float('inf')
-#     for i in range(0,n):
-#         if a < arr[i]:
-#             a=arr[i]
-#         if b > arr[i]:
-#             b=arr[i]
-#     for i in range(0,n):
-#         if a1< arr[i] and arr[i]!=a:
-#             a1 = arr[i]
-#         if b1 > arr[i] and arr[i]!=b:
-#             b1 = arr[i]
-#     print(a1)
-#     print(b1)
-
-# arr = list(map(int, input().split()))
-# pattern(arr, len(arr))        
+# def f(arr,n,k):
+#     m=0
+#     left =0
+#     right=0
+#     s=arr[0]
+#     while right<n:
+#         while left<=right and s>k:
+#             s-=arr[left]
+#             left+=1
+#         if s==k:
+#             m=max(m,right-left+1)
+#         right+=1
+#         if right<n:
+#             s+=arr[right]
+#     print(m)
+# arr=list(map(int,input().split()))
+# n=len(arr)
+# k=int(input())
+# f(arr,n,k)
 
 # 7.
 # def f(arr,n):
-#     low=0
-#     mid=0
-#     high=n-1
-#     while mid<=high:
-#         if arr[mid]==0:
-#             arr[mid],arr[low]=arr[low],arr[mid]
-#             low+=1
-#             mid+=1
-#         elif arr[mid]==1:
-#             mid+=1
-#         else:
-#             arr[mid],arr[high]=arr[high],arr[mid]
-#             high-=1
-#     print(arr)
+#     a=[]
+#     m=arr[-1]
+#     a.append(arr[-1])
+#     for i in range(n-2,-1,-1):
+#         if arr[i]>m:
+#             a.append(arr[i])
+#             m=arr[i]
+#     a.reverse()
+#     print(a)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
