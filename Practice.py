@@ -79,10 +79,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-#     14 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/check-if-a-number-is-prime-or-not/
-# https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/
-# https://takeuforward.org/arrays/find-the-highest-lowest-frequency-element/
-# https://takeuforward.org/sorting/selection-sort-algorithm/
-# https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/
-# https://takeuforward.org/data-structure/leaders-in-an-array
+# 7 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/data-structure/find-gcd-of-two-numbers/
+# https://takeuforward.org/recursion/print-n-to-1-using-recursion/
+# https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
+# https://takeuforward.org/data-structure/insertion-sort-algorithm/
+# https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
+# https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/
