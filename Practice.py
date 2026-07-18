@@ -79,10 +79,10 @@ def main():
 
 if __name__ == "__main__":
     main()
-# 7 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/find-gcd-of-two-numbers/
-# https://takeuforward.org/recursion/print-n-to-1-using-recursion/
+# 11 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/maths/check-if-a-number-is-armstrong-number-or-not/
+# https://takeuforward.org/data-structure/sum-of-first-n-natural-numbers/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/data-structure/insertion-sort-algorithm/
-# https://takeuforward.org/arrays/find-the-missing-number-in-an-array/
-# https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/
+# https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/
+# https://takeuforward.org/data-structure/count-maximum-consecutive-ones-in-the-array/
+# https://takeuforward.org/data-structure/two-sum-check-if-a-pair-with-given-sum-exists-in-array/
