@@ -1,40 +1,40 @@
 # 1.
-# def pattern(num):
-#     for i in range(num):
-#         if i%2==0:
-#             v = 1
-#         else:
-#             v = 0
+# def f(n):
+#     for i in range(n):
 #         for j in range(i+1):
-#             print(v, end = "")
-#             v= 1-v
+#             print(chr(65+i), end=" ")
 #         print()
-# num= int(input())
-# pattern(num)
+# n=int(input())
+# f(n)
 
 # 2.
-# def pattern(num):
-#     l=len(str(num))
-#     a=0
-#     n=num
+# def f(n):
+#     l=0
+#     m=0
 #     while n>0:
-#         last_digit = n%10
-#         a= last_digit**l + a
+#         l=n%10
+#         m=m*10+l
 #         n=n//10
-#     if a ==num:
-#         print("Armstrong number")
-#     else:
-#         print("Not an Armstrong number")
-# num = int(input())
-# pattern(num)
+#     print(m)
+# n=int(input())
+# f(n)
 
 # 3.
 # def f(n):
-#     if n==1:
-#         return 1
-#     return n + f(n-1)
+#     if n <=1:
+#         return 0
+#     a=[]
+#     a.append(0)
+#     a.append(1)
+#     print(a[0])
+#     print(a[1])
+#     for i in range(2,n+1):
+#         b=a[i-2]+a[i-1]
+#         a.append(b)
+#     for i in range(n+1):
+#         print(a[i],end=" ")
 # n=int(input())
-# print(f(n))
+# f(n)
 
 # 4.
 # from collections import defaultdict
@@ -49,56 +49,71 @@
 # f(arr,n)
 
 # 5.
-# def b(arr,n):
-#     if n==1:
-#         return 
-#     for j in range(n-1):
-#         if arr[j]>arr[j+1]:
-#             arr[j],arr[j+1]=arr[j+1],arr[j]
-#     b(arr,n-1)
+# def m(arr,low,high):
+#     if low>=high:
+#         return
+#     mid=(high+low)//2
+#     m(arr,low,mid)
+#     m(arr,mid+1,high)
+#     ms(arr,low,mid,high)
+# def ms(arr,low,mid,high):
+#     a=[]
+#     left=low
+#     right=mid+1
+#     while left<=mid and right<=high:
+#         if arr[left]<=arr[right]:
+#             a.append(arr[left])
+#             left+=1
+#         else:
+#             a.append(arr[right])
+#             right+=1
+#     while left<=mid:
+#         a.append(arr[left])
+#         left+=1
+#     while right<=high:
+#         a.append(arr[right])
+#         right+=1
+#     for i in range(low,high+1):
+#         arr[i]=a[i-low]
 # arr=list(map(int,input().split()))
 # n=len(arr)
-# b(arr,n)
+# m(arr,0,n-1)
 # print(arr)
 
 # 6.
+# def f(arr,n,k):
+#     l=0
+#     left=0
+#     right=0
+#     sum=arr[0]
+#     while right<n:
+#         while left<= right and sum>k:
+#             sum-=arr[left]
+#             left+=1
+#         if sum==k:
+#             l =max(l,right-left+1)
+#         right+=1
+#         if right<n:
+#             sum+= arr[right]
+#     print(l)
+# arr=list(map(int, input().split()))
+# n=len(arr)
+# k=int(input())
+# f(arr,n,k)
+
+# 7.
 # def f(arr,n):
-#     c=0
-#     m=0
+#     a=[]
 #     for i in range(n):
-#         if arr[i]==1:
-#             c+=1
-#         else:
-#             c= 0
-#         m=max(c,m)
-#     print(m)
+#         b=True
+#         for j in range(i+1,n):
+#             if arr[i]<arr[j]:
+#                 b=False
+#                 break
+#         if b:
+#             a.append(arr[i])
+#     print(a)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
-# 7.
-# def p(arr,n,k):
-#     a=sorted(arr)
-#     left =0
-#     right = n-1
-#     while left<right:
-#         if a[left]+a[right] >k:
-#             right-=1
-#         elif a[left]+a[right]<k:
-#             left+=1
-#         elif a[left]+a[right]==k:
-#             return "Yes"
-#     return "NO"
-# def m(arr,n,k):
-#     a={}
-#     for i , num in enumerate(arr):
-#         x=k-num
-#         if x in a:
-#             return [a[x],i]
-#         a[num]=i 
-#     return [-1,-1]
-# arr=list(map(int,input("Enter the array: ").split()))
-# n = len(arr)
-# k=int(input("Enter the number sum: "))
-# print(m(arr,n,k))
-# print(p(arr,n,k))
