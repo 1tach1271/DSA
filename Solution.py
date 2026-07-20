@@ -1,40 +1,36 @@
 # 1.
 # def f(n):
-#     for i in range(n):
+#     for i in range(n-1,-1,-1):
 #         for j in range(i+1):
-#             print(chr(65+i), end=" ")
+#             print(chr(65+j),end=" ")
 #         print()
 # n=int(input())
 # f(n)
 
 # 2.
-# def f(n):
+# def p(n):
+#     a=n
 #     l=0
 #     m=0
-#     while n>0:
-#         l=n%10
+#     while a>0:
+#         l=a%10
 #         m=m*10+l
-#         n=n//10
-#     print(m)
+#         a=a//10
+#     if m==n:
+#         print("Palindrome")
+#     else:
+#         print("Not palindrome")
 # n=int(input())
-# f(n)
+# p(n)
 
 # 3.
-# def f(n):
-#     if n <=1:
-#         return 0
-#     a=[]
-#     a.append(0)
-#     a.append(1)
-#     print(a[0])
-#     print(a[1])
-#     for i in range(2,n+1):
-#         b=a[i-2]+a[i-1]
-#         a.append(b)
-#     for i in range(n+1):
-#         print(a[i],end=" ")
+# def r(n,m):
+#     if m>n:
+#         return
+#     print(m,end=" ")
+#     r(n,m+1)
 # n=int(input())
-# f(n)
+# r(n,1)
 
 # 4.
 # from collections import defaultdict
@@ -49,70 +45,58 @@
 # f(arr,n)
 
 # 5.
-# def m(arr,low,high):
-#     if low>=high:
-#         return
-#     mid=(high+low)//2
-#     m(arr,low,mid)
-#     m(arr,mid+1,high)
-#     ms(arr,low,mid,high)
-# def ms(arr,low,mid,high):
-#     a=[]
-#     left=low
-#     right=mid+1
-#     while left<=mid and right<=high:
-#         if arr[left]<=arr[right]:
-#             a.append(arr[left])
-#             left+=1
-#         else:
-#             a.append(arr[right])
-#             right+=1
-#     while left<=mid:
-#         a.append(arr[left])
-#         left+=1
-#     while right<=high:
-#         a.append(arr[right])
-#         right+=1
-#     for i in range(low,high+1):
-#         arr[i]=a[i-low]
+# def i(arr,n):
+#     for i in range(1,n):
+#         j=i
+#         while j>0 and arr[j-1]>arr[j]:
+#             arr[j],arr[j-1]=arr[j-1],arr[j]
+#             j-=1
 # arr=list(map(int,input().split()))
 # n=len(arr)
-# m(arr,0,n-1)
+# i(arr,n)
 # print(arr)
 
 # 6.
-# def f(arr,n,k):
-#     l=0
-#     left=0
-#     right=0
-#     sum=arr[0]
-#     while right<n:
-#         while left<= right and sum>k:
-#             sum-=arr[left]
-#             left+=1
-#         if sum==k:
-#             l =max(l,right-left+1)
-#         right+=1
-#         if right<n:
-#             sum+= arr[right]
-#     print(l)
-# arr=list(map(int, input().split()))
+# def z(arr,n):
+#     a=[0]*n
+#     b=0
+#     for i in range(n):
+#         if arr[i]!=0:
+#             a[b]=arr[i]
+#             b+=1
+#     print(a)
+# arr=list(map(int,input().split()))
 # n=len(arr)
-# k=int(input())
-# f(arr,n,k)
+# z(arr,n)
+
+# def z(arr,n):
+#     a=-1
+#     for i in range(n):
+#         if arr[i]==0:
+#             a=i
+#             break
+#     if a==-1:
+#         return arr
+#     for i in range(a+1,n):
+#         if arr[i]!=0:
+#             arr[i],arr[a]=arr[a],arr[i]
+#             a+=1
+#     return arr
+# arr=list(map(int,input().split()))
+# n=len(arr)
+# print(z(arr,n))
 
 # 7.
 # def f(arr,n):
-#     a=[]
+#     m=1
 #     for i in range(n):
-#         b=True
-#         for j in range(i+1,n):
-#             if arr[i]<arr[j]:
-#                 b=False
-#                 break
-#         if b:
-#             a.append(arr[i])
-#     print(a)
+#         b=1
+#         a=arr[i]
+#         while a+1 in arr:
+#             b+=1
+#             a+=1
+#             m=max(m,b)
+#     print(m)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
