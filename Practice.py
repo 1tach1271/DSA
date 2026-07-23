@@ -61,15 +61,23 @@ mediumArrays =[
     "https://takeuforward.org/data-structure/leaders-in-an-array",
     "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array",
     "https://takeuforward.org/arrays/count-subarray-sum-equals-k",
-    "https://takeuforward.org/data-structure/spiral-traversal-of-matrix"]
+    "https://takeuforward.org/data-structure/spiral-traversal-of-matrix",
+    "https://takeuforward.org/arrays/count-subarray-sum-equals-k/"]
 
+hardArrays =[
+    "https://takeuforward.org/data-structure/program-to-generate-pascals-triangle",
+    "https://takeuforward.org/data-structure/majority-elementsn-3-times-find-the-elements-that-appears-more-than-n-3-times-in-the-array/",
+    "https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/",
+    "https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/"
+]
 modules = [
 	basicMaths,
 	recursion,
 	hashing,
     sorting,
 	easyArrays,
-    mediumArrays
+    mediumArrays,
+    hardArrays
 ]
 
 def main():
@@ -79,10 +87,11 @@ def main():
 
 if __name__ == "__main__":
     main()
-# 15 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/check-if-a-number-is-palindrome-or-not/
-# https://takeuforward.org/recursion/print-1-to-n-using-recursion/
+# 12 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/data-structure/find-gcd-of-two-numbers/
+# https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/data-structure/insertion-sort-algorithm/
+# https://takeuforward.org/sorting/selection-sort-algorithm/
 # https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/
-# https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array
+# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
+# https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/

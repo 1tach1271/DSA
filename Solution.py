@@ -1,36 +1,40 @@
 # 1.
 # def f(n):
-#     for i in range(n-1,-1,-1):
-#         for j in range(i+1):
-#             print(chr(65+j),end=" ")
+#     for i in range(1,n+1):
+#         for j in range(1,i+1):
+#             print(j,end="")
+#         print(" "*(2*(n-i)),end="")
+#         for j in range(i,0,-1):
+#             print(j,end="")
 #         print()
 # n=int(input())
 # f(n)
 
 # 2.
-# def p(n):
-#     a=n
-#     l=0
-#     m=0
-#     while a>0:
-#         l=a%10
-#         m=m*10+l
-#         a=a//10
-#     if m==n:
-#         print("Palindrome")
+# def f(n,m):
+#     while n>0 and m>0:
+#         if n>m:
+#             n=n-m
+#         else:
+#             m=m-n
+#     if n==0:
+#         print(m)
 #     else:
-#         print("Not palindrome")
+#         print(n)
 # n=int(input())
-# p(n)
+# m=int(input())
+# f(n,m)
 
 # 3.
-# def r(n,m):
-#     if m>n:
-#         return
-#     print(m,end=" ")
-#     r(n,m+1)
-# n=int(input())
-# r(n,1)
+# def f(a,n):
+#     b=a[::-1]
+#     if a==b:
+#         return "True"
+#     else:
+#         return "False"
+# a=input()
+# n=len(a)
+# print(f(a,n))
 
 # 4.
 # from collections import defaultdict
@@ -45,59 +49,29 @@
 # f(arr,n)
 
 # 5.
-# def i(arr,n):
-#     for i in range(1,n):
-#         j=i
-#         while j>0 and arr[j-1]>arr[j]:
-#             arr[j],arr[j-1]=arr[j-1],arr[j]
-#             j-=1
+# def s(arr,n):
+#     for i in range(0,n-1):
+#         a=i
+#         for j in range(i+1,n):
+#             if arr[j]<arr[a]:
+#                 a=j
+#         arr[i],arr[a]=arr[a],arr[i]
+#     print(arr)
 # arr=list(map(int,input().split()))
 # n=len(arr)
-# i(arr,n)
-# print(arr)
+# s(arr,n)
 
 # 6.
-# def z(arr,n):
-#     a=[0]*n
-#     b=0
-#     for i in range(n):
-#         if arr[i]!=0:
-#             a[b]=arr[i]
-#             b+=1
-#     print(a)
-# arr=list(map(int,input().split()))
-# n=len(arr)
-# z(arr,n)
-
-# def z(arr,n):
-#     a=-1
-#     for i in range(n):
-#         if arr[i]==0:
-#             a=i
-#             break
-#     if a==-1:
-#         return arr
-#     for i in range(a+1,n):
-#         if arr[i]!=0:
-#             arr[i],arr[a]=arr[a],arr[i]
-#             a+=1
-#     return arr
-# arr=list(map(int,input().split()))
-# n=len(arr)
-# print(z(arr,n))
-
-# 7.
 # def f(arr,n):
-#     m=1
+#     a=[0]*n 
+#     j=0
 #     for i in range(n):
-#         b=1
-#         a=arr[i]
-#         while a+1 in arr:
-#             b+=1
-#             a+=1
-#             m=max(m,b)
-#     print(m)
+#         if arr[i]!=0:
+#             a[j]=arr[i]
+#             j+=1
+#     print(a)
 # arr=list(map(int,input().split()))
 # n=len(arr)
 # f(arr,n)
 
+# 7.
