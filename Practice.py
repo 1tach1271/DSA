@@ -87,11 +87,11 @@ def main():
 
 if __name__ == "__main__":
     main()
-# 12 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
-# https://takeuforward.org/data-structure/find-gcd-of-two-numbers/
-# https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/
+# 11 ['https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/']
+# https://takeuforward.org/maths/reverse-digits-of-a-number
+# https://takeuforward.org/recursion/print-n-to-1-using-recursion/
 # https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/
-# https://takeuforward.org/sorting/selection-sort-algorithm/
-# https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/
-# https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/
-# https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/
+# https://takeuforward.org/data-structure/merge-sort-algorithm/
+# https://takeuforward.org/data-structure/rotate-array-by-k-elements/
+# https://takeuforward.org/arrays/count-subarray-sum-equals-k
+# https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/
