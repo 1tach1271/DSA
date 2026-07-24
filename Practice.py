@@ -68,7 +68,9 @@ hardArrays =[
     "https://takeuforward.org/data-structure/program-to-generate-pascals-triangle",
     "https://takeuforward.org/data-structure/majority-elementsn-3-times-find-the-elements-that-appears-more-than-n-3-times-in-the-array/",
     "https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/",
-    "https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/"
+    "https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/",
+    "https://takeuforward.org/data-structure/length-of-the-longest-subarray-with-zero-sum/",
+    "https://takeuforward.org/data-structure/count-the-number-of-subarrays-with-given-xor-k/"
 ]
 modules = [
 	basicMaths,
